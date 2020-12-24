@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Final Review</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./final.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+ 
+</head>
+<body>
+
+<div class="container hr">
+  <div class="hrdetail">
+    <h3>H R Details <i class="fas fa-user"></i> </h3>
+  </div>
+  <div class="imghr">
+    <img src="" class="rounded mx-auto d-block hrimg" alt="hr image" style="border-radius: 50%;" width="200px" height="200px">
+  </div>
+
+  <div class="hrdetails">
+    <h5 class="hname">Unknow</h5>
+    <h5 class="hemail">hemail</h5>
+  </div>
+</div>
+<div class="container" style="display: flex; justify-content: center; align-items: center;">
+  <button type="button" class="btn btn-warning help" onclick="location.href ='./index.html'">
+    Home
+  </button>
+</div>
+<hr>
+<div class="candidate container">
+  <h3 class="bg-dark" style="color: cyan;">Candidate : Ashutosh Rai</h3>
+  <h4 class="bg-dark" style="color: cyan;">Information Technology</h4>
+  <h4 class="bg-dark" style="color: cyan;">CGPA : 9</h4>
+</div>
+
+<div class="qdtails container">
+  <div class="each">
+    <h5></h5>
+   
+  </div>
+</div>
+
+<!-- graph  -->
+<div class="container" style="width: 100%; height: 500px;">
+
+  <canvas id="myChart" ></canvas> 
+</div> 
+
+
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Q.1', 'Q.2 ', 'Q.3', 'Q.4', 'Q.5'],
+        datasets: [{
+            label: '# of Votes',
+            data: [sessionStorage.getItem('1Rat'), sessionStorage.getItem('2Rat'), sessionStorage.getItem('3Rat'), sessionStorage.getItem('4Rat'), sessionStorage.getItem('5Rat')],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 0
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+</body>
+<script src="./final.js"></script>
+</html>

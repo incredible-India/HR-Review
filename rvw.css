@@ -1,0 +1,145 @@
+/* for question class containg qustions and paginations inside it block  */
+@keyframes anima {
+    0%{
+        font-size: 30px;
+    }
+    
+    50%{
+    
+            font-size: 38px;
+        
+    }
+    100%{
+    
+        font-size: 32px;
+    
+}
+}
+
+.question{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.ask{
+    margin: 15px;
+}
+ /* page 1 2 3 wala hai  */
+
+.pagination{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* rating and comment wala class */
+
+.ratingAndComment{
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.videos {
+    display: flex;
+    margin: auto;
+    /* justify-content: center;
+    align-items: center; */
+    outline: none;
+    width: 100%;
+    height: 330px;
+    
+}
+
+@media (max-width : 544px)
+{
+    .videos {
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: 200px;
+  
+}
+
+}
+
+.checked
+{
+    cursor: pointer;
+color:red;
+animation-name: anima;
+animation-delay: 1s;
+animation-iteration-count: infinite;
+}
+
+.unchecked
+{
+    cursor: pointer;
+color:black;
+}
+
+label {
+   font-size: 22px;
+   font-weight: 600;
+   padding: 2px;
+}
+
+#userprofile:hover{
+
+    color: cyan;
+
+}
+
+.aboutdata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    font-weight: 300;
+}
+
+.userinfo{
+    margin: 15px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.para
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: cyan;
+
+
+}
+
+#userprofile{
+    cursor: pointer;
+}
+
+#hide{
+    margin-bottom: 4px;
+    padding: 4px;
+}
+
+.imgages{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

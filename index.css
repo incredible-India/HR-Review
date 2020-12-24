@@ -1,0 +1,37 @@
+body{
+    overflow-x: hidden;
+}
+
+.newuserhead{
+    font-size: 37px;
+    text-align: center;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imgages{
+    border-radius: 50%;
+    outline: none;
+}
+
+.para
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+}
+
+.help{
+  
+    margin: 15px;
+}
