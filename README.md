@@ -5,3 +5,4 @@
 #if login/signup is succesfull then HR will be able to view the candidate profile as well as response to interview question,here rating is cumpolsory ans comments are optional
 #last page shows the HR rating and comments for the candidate.
 #5 videos havce been downloaded and stored in local storage 
+Done
